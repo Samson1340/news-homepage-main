@@ -51,6 +51,9 @@ nav ul li a{
 nav ul li a:hover{
     color: var(--Soft-0orange);
 }
+#menu, #menu-close{
+    display: none;
+}
 
 .grid{
     display: grid;
@@ -100,9 +103,7 @@ nav ul li a:hover{
 .grid-item2 > .btn-read-more:hover{
     
     background-color: var(--Very-dark-blue);
-    
-    
-    
+       
 }
 
 .vertical-card{
@@ -155,10 +156,8 @@ nav ul li a:hover{
     flex-wrap: nowrap;
     justify-content: flex-start;
     width: 100%;
-    gap: 4rem;
-    
+    gap: 4rem;   
 }
-
 .card{
     display: flex;
     flex-wrap: nowrap;
@@ -202,8 +201,161 @@ nav ul li a:hover{
     position: absolute;
     bottom: 1px;
     text-align: center;
+    font-size: 11px; 
+    
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
 }
 
+@media screen and (max-width: 375px){
+    body{
+        width: 375px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    header{
+        width: 50vw;
+        height: 6rem;
+        margin: 0 8px;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 25vw);
+        position: fixed;
+        z-index: 9;
+        background-color: var(--Off-white);
+    }
+    #nav-bar{
+        width: 30vw;
+        background-color: var(--Off-white);
+        z-index: 10;
+        display: none;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        gap: 5px;
+        padding-top: 8rem;
+       
+    }
+    
+    nav ul li a{
+        font-size: 0.7em;
+        color: var(--Very-dark-blue);
+        
+    }
+    .logo > img {
+        width: 40px;
+        padding-left: 8px;
+    }
+    #menu-close{
+        width: 10px;
+        float:right;
+        margin: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    #menu{
+        display: inline;
+        position: absolute;
+        left: 44vw;
+        width: 30px;
+        float: right;
+        cursor: pointer;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content:baseline;
+        align-items:baseline;
+        margin: auto 8px;
+        padding-top: 8rem;
+    }
+    .grid-item img{
+        width: 50vw;
+        height: 20vh;
+    }
+    .grid-item1, .grid-item2{
+        width: 50vw;
+        height: 10vh;
+   
+    }
+    .grid-item1 > h1{
+
+    font-size: 3em;
+    
+    }
+    .grid-item2 > p{
+        font-size: 1.5em;
+    }
+    .grid-item2 > .btn-read-more{
+    position: relative;
+    width: 28vw;
+    height: 4rem;
+    font-size: 1.7em;
+    margin: 10px 0;
+    
+    }
+
+    .vertical-card{
+    width: 50vw;
+    margin-top: 6rem;
+    padding: 2rem 1.5rem;
+    
+    }
+
+    .vertical-card > .card-item > h2{
+    font-size: 1.5em;
+    }
+    .vertical-card > .card-item > p{
+        font-size: 1.2em;
+        line-height: 2rem;
+    }
+    .vertical-card > h1{
+    font-size: 3em;
+    
+    }
+
+    .horzontal-card{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 1.3rem;   
+    }
+    .card{
+    width: 100%;
+    height: auto;
+    
+
+    }
+    .card > .card-image > img{
+    width: 50px;
+    aspect-ratio: 0.8;
+    }
 
 
+    .card > .card-content > h1{
+    font-size: 2em;
+    }
+    .card > .card-content > h2{
+    font-size: 1.4em;
+    margin-top: 0.6rem;
+    
+    }
+    .card > .card-content > p{
+    font-size: 1.2em;
 
+    
+    }
+
+    .attribution{
+    width: 50vw;
+    position:relative;
+    margin-top: 3rem;
+    font-size: 8px;
+    }
+}

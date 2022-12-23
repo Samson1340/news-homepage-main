@@ -9,25 +9,26 @@
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 <header>
   <div class="logo">
     <img src="./assets/images/logo.svg" alt="logo">
   </div>
-<nav class="nav-bar">
+<nav id="nav-bar">
+  <div id="menu-close">
+    <img src="./assets/images/icon-menu-close.svg" alt="icon-close">
+  </div>
 <ul>
-    <li><a class="nav-link" href="#">Home</a></li>
-    <li><a class="nav-link" href="#">New</a></li>
-    <li><a class="nav-link" href="#">Popular</a></li>
-    <li><a class="nav-link" href="#">Trending</a></li>
-    <li><a class="nav-link" href="#">Categories</a></li>  
+    <li><a class="nav-link" href="./index.html">Home</a></li>
+    <li><a class="nav-link" href="./index.html">New</a></li>
+    <li><a class="nav-link" href="./index.html">Popular</a></li>
+    <li><a class="nav-link" href="./index.html">Trending</a></li>
+    <li><a class="nav-link" href="./index.html">Categories</a></li>  
 </ul>
+
 </nav>
+<img id="menu" src="./assets/images/icon-menu.svg" alt="icon-menu">
 </header>
 <div class="grid">
   <div class="grid-item">
@@ -94,5 +95,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Samson S.</a>.
   </div>
+  <script src="./menu.js"></script>
 </body>
 </html>
