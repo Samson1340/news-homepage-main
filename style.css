@@ -208,7 +208,8 @@ nav ul li a:hover{
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 400px){
+@media only screen 
+and (-webkit-min-device-pixel-ratio: 3){
     body{
         width: 400px;
         overflow-y: scroll;
