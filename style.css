@@ -148,7 +148,7 @@ nav ul li a:hover{
     color: var(--Soft-0orange);
 }
 
-.horzontal-card{
+.horizontal-card{
     grid-column: 1 / -1;
     grid-row: 3 / 3;
     margin-top: 30px;
@@ -208,25 +208,25 @@ nav ul li a:hover{
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 400px){
     body{
-        width: 375px;
+        width: 400px;
         overflow-y: scroll;
         overflow-x: hidden;
     }
     header{
-        width: 50vw;
+        width: 100vw;
         height: 6rem;
         margin: 0 8px;
         justify-content: space-between;
         display: grid;
-        grid-template-columns: repeat(2, 25vw);
+        grid-template-columns: repeat(2, 50vw);
         position: fixed;
         z-index: 9;
         background-color: var(--Off-white);
     }
     #nav-bar{
-        width: 30vw;
+        width: 50vw;
         background-color: var(--Off-white);
         z-index: 10;
         display: none;
@@ -254,14 +254,14 @@ nav ul li a:hover{
     #menu-close{
         width: 10px;
         float:right;
-        margin: 20px;
+        margin: 30px;
         cursor: pointer;
-        display: block;
+        display: inline;
     }
     #menu{
         display: inline;
         position: absolute;
-        left: 44vw;
+        left: 85vw;
         width: 30px;
         float: right;
         cursor: pointer;
@@ -275,11 +275,11 @@ nav ul li a:hover{
         padding-top: 8rem;
     }
     .grid-item img{
-        width: 50vw;
+        width: 95vw;
         height: 20vh;
     }
     .grid-item1, .grid-item2{
-        width: 50vw;
+        width: 95vw;
         height: 10vh;
    
     }
@@ -293,7 +293,7 @@ nav ul li a:hover{
     }
     .grid-item2 > .btn-read-more{
     position: relative;
-    width: 28vw;
+    width: 50vw;
     height: 4rem;
     font-size: 1.7em;
     margin: 10px 0;
@@ -301,17 +301,17 @@ nav ul li a:hover{
     }
 
     .vertical-card{
-    width: 50vw;
+    width: 95vw;
     margin-top: 6rem;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.9rem;
     
     }
 
     .vertical-card > .card-item > h2{
-    font-size: 1.5em;
+    font-size: 2em;
     }
     .vertical-card > .card-item > p{
-        font-size: 1.2em;
+        font-size: 1.5em;
         line-height: 2rem;
     }
     .vertical-card > h1{
@@ -319,43 +319,32 @@ nav ul li a:hover{
     
     }
 
-    .horzontal-card{
+    .horizontal-card{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    gap: 1.3rem;   
+    width: 95vw;
+    gap: 1.5rem;   
     }
     .card{
-    width: 100%;
+    width: 95%;
     height: auto;
+    justify-content: flex-start;
+    gap: 2rem;
     
 
     }
     .card > .card-image > img{
-    width: 50px;
+    width: 25vw;
     aspect-ratio: 0.8;
     }
 
-
-    .card > .card-content > h1{
-    font-size: 2em;
-    }
-    .card > .card-content > h2{
-    font-size: 1.4em;
-    margin-top: 0.6rem;
-    
-    }
-    .card > .card-content > p{
-    font-size: 1.2em;
-
-    
-    }
 
     .attribution{
     width: 50vw;
     position:relative;
     margin-top: 3rem;
+    bottom: 1rem;
     font-size: 8px;
     }
 }
